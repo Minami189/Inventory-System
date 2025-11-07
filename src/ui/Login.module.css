@@ -1,0 +1,78 @@
+*{
+    font-family: Poppins;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0; 
+    padding:0;
+    color:white;
+}
+
+.loginpage {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#17181E, #232632);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.left{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    width: 55%;
+}
+
+
+.loginwrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+}
+
+.message{
+    height:25px;
+    font-size: 0.8rem;
+    color:red;
+    animation: fade 2s forwards;
+}
+
+
+
+.loginwrapper button{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    border:none;
+    border-radius: 15px;
+    padding: 7px 2px 7px 2px;
+    cursor:pointer;
+}
+
+.loginput{
+    font-size: 1.2rem;
+    background-color: transparent;
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    border: solid 1px white;
+    color:white;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginbutton{
+    font-size: 1.2rem;
+    background-color: #232632;
+}

@@ -1,0 +1,17 @@
+{
+  "appId": "com.hi-sagmit.inventorymanager",
+  "productName": "Inventory Manager",
+  "asar": true,
+  "compression": "store",
+  "files": [
+    "dist-electron",
+    "dist-react"
+  ],
+  "directories": {
+    "output": "release"
+  },
+  "win": {
+    "target": ["portable"],
+    "icon": "./icon.png"
+  }
+}

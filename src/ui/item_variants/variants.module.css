@@ -1,0 +1,150 @@
+.variantBody {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /*just to make sure everything shows*/
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.variantContent {
+  position: relative; 
+  z-index: 1;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  background-color: #4C5167;
+  border:solid 2px #666c8a;; 
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.variantSelection{
+    display:flex;
+    gap:15px;
+}
+
+.variant{
+    background-color: #7b83a3;
+    color:white;
+}
+
+.selected{
+    background-color: #a6b0da;
+}
+
+.quantityContainer{
+    color:white;
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    display:flex;
+    width:100%;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.quantityContainer input{
+    width: 60%;
+    height: 40px;
+    color:white;
+    background-color:#7b83a3;
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    font-family: Poppins
+, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.quantityContainer input::placeholder{
+  color:rgba(255, 255, 255, 0.493);
+}
+
+.confirmButton{
+    margin-top: 50px;
+    background-color: #2b2d3ab7;
+    border: solid 2px #2b2d3a;
+    width: 50%;
+    height: 40px;
+    padding: 5px 0px 5px 0px;
+}
+.variantSelection button{
+  padding: 10px 15px 10px 15px;
+}
+
+.dateInput{
+  background-color:#7b83a3;
+  border:none;
+  color:white;
+  font-size: 1.2rem;
+  font-family: Poppins;
+  padding: 5px 15px 5px 15px;
+  width:170px;
+  border-radius: 5px;
+  border:solid 1px #a6b0da6e;
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+  /*Can't directly change color so yes invert*/
+  filter: invert(1);
+}
+
+.variantName{
+  height: 125px;
+  color:white;
+  font-family: Poppins;
+  background-color: #2b2d3a7a;
+  border: solid 2px #2b2d3a;
+  padding: 15px 5px 15px 5px;
+  border-radius: 15px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.variantName p{
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin:0px;
+  padding: 0px;
+}
+
+
+
+.bottomContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width:100%;
+  gap: 5px;
+}
+
+.bottomContainer p{
+  margin:0px;
+  padding:0px;
+  height: 0px;
+  color:rgb(255, 0, 0);
+}

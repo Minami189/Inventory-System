@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  color: black;
+  background-color: #232632;
+}
+
+.header {
+  background-color: #17181E;
+  color: white;
+  height: 150px;
+  width: 100%;
+  padding:25px;
+  border-bottom: solid 2px #393C46;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+
+
+    gap:5px;
+}
+
+.top{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+button{
+    cursor:pointer;
+    font-size: 1.2rem;
+    color:white;
+    
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+    border-radius: 15px;
+    border:none;
+}
+
+.active{
+    background-color: #292C37;
+}
+
+.inactive{
+    background-color: transparent;
+}
+
+nav{
+    display:flex;
+    gap:10px;
+}
+
+.left h1{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.headerTitle{
+    width:100%;
+    text-align: center;
+}
+
+.main{
+    height:100%;
+    width:100%;
+}
+
+.mainTop{
+    padding: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap:15px;
+}
+
+.tableWrapper{
+    margin-top: 50px;
+    width:100%;
+    
+}
+
+.tableBody{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    border-bottom: solid 1px black;
+}
+
+.tableBody h2{
+    color:white;
+    background-color: #17181E;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.tableBody h3{
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.dateInput{
+  background-color:#4C5167 ;
+  border:none;
+  color:white;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width:170px;
+  padding: 7px 10px 7px 10px;
+  border-radius: 15px;
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+  /*Can't directly change color so yes invert*/
+  filter: invert(1);
+}
+
+.loadingHistory{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    font-size: 1.5rem;
+    align-items: center;
+    color:white;
+    
+    height:10%;
+}
+
+.mainTop input{
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+.mainTop input::placeholder{
+    color:rgba(255, 255, 255, 0.486);
+}

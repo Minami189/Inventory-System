@@ -1,0 +1,50 @@
+.popupBody {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /*just to make sure everything shows*/
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+  z-index: 0;
+}
+
+.deleteContent {
+  position: relative; 
+  z-index: 1;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  background-color: #4C5167;
+  border: solid 2px #697091;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.deleteContent h1{
+  font-size: 1.2rem;
+  color:white;
+  font-weight: normal;
+}
+
+.deleteContent button{
+  background: linear-gradient(rgba(172, 11, 11, 0.473), hsla(0, 88%, 32%, 0.781));
+  border: solid 1px hsla(0, 88%, 35%, 1);
+  width: 150px;
+  padding: 5px;
+  font-weight: normal;
+}
