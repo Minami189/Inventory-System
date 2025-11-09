@@ -18,7 +18,7 @@ export default function Variants({showVariants, setShowVariants, selectedItemID,
 
   const [variants, setVariants] = useState<Variant[]>([]);
   const [selectedVariant, setSelectedVariant] = useState(0);
-  const [selectedVariantName, setSelectedVariantName] = useState("Select Amount");
+  const [selectedVariantName, setSelectedVariantName] = useState("Select Variant");
   const [variantStocks, setStocks] = useState(0);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState("");
@@ -74,7 +74,7 @@ export default function Variants({showVariants, setShowVariants, selectedItemID,
     const variantID = selectedVariant;
     const quantity = Number(quantityRef.current.value);
     const date = dateRef.current.value;
-    setShowVariants(false);
+    
     if(selectedVariantName == "" || !quantity || date == ""){
       setMessage("please fill out all fields");
       setTimeout(()=>{
@@ -91,7 +91,7 @@ export default function Variants({showVariants, setShowVariants, selectedItemID,
       return;
     }
 
-  
+    setShowVariants(false);
     const {data, error} = await supabase.from("Records").insert([{variant_id:variantID, quantity:quantity, date:date}]);
 
     if(error) {
